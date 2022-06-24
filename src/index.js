@@ -52,9 +52,7 @@ module.exports = function toReadable(number) {
             resultString += numbersUpTo20[dozen * 10 + unit]
                 ? numbersUpTo20[dozen * 10 + unit]
                 : "";
-        }
-
-        if (dozen > 1) {
+        } else {
             resultString += dozens[dozen];
             if (unit) resultString += " " + numbersUpTo20[unit];
         }
